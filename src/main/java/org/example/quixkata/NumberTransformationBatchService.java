@@ -23,7 +23,7 @@ public class NumberTransformationBatchService {
             String line;
             while ((line = reader.readLine()) != null) {
                 int number = Integer.parseInt(line.trim());
-                String transformedNumber = fbqService.transformNumberToString(number);
+                String transformedNumber = TransformAlgo.transformNumberToString(number);
                 writer.write(transformedNumber);
                 writer.newLine();
             }
